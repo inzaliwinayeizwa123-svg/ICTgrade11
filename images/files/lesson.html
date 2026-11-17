@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Study binomial expansion and the binomial theorem in this Grade 11 mathematics lesson.">
+    <title>Chapter 2: The Binomial Theorem | Math</title>
+    <link rel="stylesheet" href="lesson.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navigation" aria-label="Main navigation">
+            <a class="brand" href="index.html" aria-label="Math home">
+                <img src="logo.png" alt="" class="logo">
+                <span>Binomial Theorem</span>
+            </a>
+            <ul class="menu-bar">
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link active" href="lesson.html" aria-current="page">Lessons</a></li>
+                <li><a class="nav-link" href="purpose.html">Purpose</a></li>
+                <li><a class="nav-link" href="refer.html">References</a></li>
+                <li><a class="nav-link" href="aboutus.html">About us</a></li>
+                <li>
+          <div class="searchbox">
+            <input type="text" id="input" placeholder="Search">
+            <button id="searchbutton">Search</button>
+          </div>
+        </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="co-nav" aria-label="Lesson contents">
+            <p class="sidebar-heading">ON THIS PAGE</p>
+            <a class="nav-item" href="#lesson"><span class="nav-icon">01</span><span>Overview</span><span class="nav-marker">📌</span></a>
+            <a class="nav-item" href="#content"><span class="nav-icon">02</span><span>Contents</span><span class="nav-marker">📌</span></a>
+            <a class="nav-item" href="#2.1"><span class="nav-icon">2.1</span><span>Binomial expansion</span><span class="nav-marker">📌</span></a>
+            <div class="submenu">
+                <a class="sub-item" href="#pascal">Pascal's triangle</a>
+            </div>
+            <a class="nav-item" href="#2.2"><span class="nav-icon">2.2</span><span>Binomial theorem</span><span class="nav-marker">📌</span></a>
+            <div class="submenu">
+                <a class="sub-item" href="#theo21">Theorem 2.1</a>
+                <a class="sub-item" href="#specialcase">Special case</a>
+                <a class="sub-item" href="#corollary">Corollary 2.2</a>
+                <a class="sub-item" href="#general">General term</a>
+                <a class="sub-item" href="#middleterm">Middle term</a>
+            </div>
+             <a class="nav-item" href="#quiz"><span class="nav-icon">📝</span><span>Quiz</span><span class="nav-marker">📌</span></a>
+        </aside>
+        <main id="content" class="main-right">
+            <section id="lesson" class="introslide">
+                <div class="left">
+                    <p class="eyebrow">Grade 11 · Mathematics</p>
+                    <p>CHAPTER 02</p>
+                    <h1>The Binomial Theorem</h1>
+                    <p class="hero-description">Explore binomial expansions, discover Pascal's triangle, and learn a powerful formula for higher powers.</p>
+                    <a class="button button-primary" href="#2.1">Begin lesson <span aria-hidden="true">↓</span></a>
+                </div>
+                <div class="right">
+                    <img class="img1" src="sch1.jpg" alt="Students studying mathematics">
+                    <img class="img2" src="sch2.jpg" alt="Mathematics lesson materials">
+                    <img class="img3" src="sch3.jpg" alt="A classroom learning scene">
+                </div>
+            </section>
+            <section id="content" class="contents-section">
+                <article class="book-content" data-page-title="Contents">
+            <p class="page-kicker">CHAPTER 02</p>
+            <h2>Contents</h2>
+            <ol class="contents-list">
+                <li><a href="#2.1">Binomial expansion</a><span>01</span></li>
+                <li><a href="#pascal">Pascal's triangle</a><span>02</span></li>
+                <li><a href="#2.2">The binomial theorem</a><span>03</span></li>
+                <li><a href="#theo21">Theorem 2.1</a><span>04</span></li>
+                <li><a href="#specialcase">Special case and properties</a><span>05</span></li>
+                <li><a href="#corollary">Corollary 2.2</a><span>06</span></li>
+                <li><a href="#general">General term</a><span>07</span></li>
+                <li><a href="#middleterm">Middle term</a><span>08</span></li>
+                <li><a href="#quiz">Practice quiz</a><span>09</span></li>
+            </ol> 
+                </article>
+            </section>
+                <div id="2.1" class="first-div">
+                    <div class="left">
+                        <p class="section-label">SECTION 2.1</p>
+                        <h2>Binomial expansion</h2>
+                        <p>We can express powers of <i>(x + y)</i> as follows:</p>
+                        <p><i>(x+y)</i><sup>1</sup> = <i>x+y</i></p>
+                        <p><i>(x+y)</i><sup>2</sup> = <i>x</i><sup>2</sup> + 2<i>xy</i> + <i>y</i><sup>2</sup></p>
+                        <p><i>(x+y)</i><sup>3</sup> = <i>x</i><sup>3</sup> + 3<i>x</i><sup>2</sup><i>y</i> + 3<i>x</i><i>y</i><sup>2</sup> + <i>y</i><sup>3</sup></p>
+                        <p><i>(x+y)</i><sup>4</sup> = <i>x</i><sup>4</sup>+4 <i>x <sup>3</sup>y</i>+ <i>6x<sup>2</sup>y <sup>2</sup></i>+ <i>4xy<sup>3</sup></i>+y<sup>4</sup></p>
+                        <p><i>(x+y)</i><sup>5</sup> =<i>x</i> <sup>5</sup>+5 <i>x<sup>4</sup>y</i>+10 <i>x <sup>3</sup>y</i> <sup>2</sup> + 10 <i>x <sup>2</sup>y <sup>3</sup></i>+ <i>5xy<sup>4</sup></i>+y <sup>5</sup></p>
+                    </div> 
+                <div class="second-div">
+                    <div id="pascal" class="second-div left">
+                    <table class="first-table">
+                        <caption>Coefficients of the first five binomial powers</caption>
+                        <thead><tr><th scope="col">Power</th><th scope="col">Coefficients</th></tr></thead>
+                        <tbody>
+                        <tr>
+                        <td><i>(x+y)</i><sup>1</sup></td>
+                        <td>1 1</td>
+                        </tr>
+                        <tr>
+                            <td><i>(x+y)</i><sup>2</sup></td>
+                            <td>1  2  1</td>
+                        </tr>
+                        <tr>
+                            <td><i>(x+y)</i><sup>3</sup></td>
+                            <td>1  3  3  1</td>
+                        </tr>
+                        <tr>
+                            <td><i>(x+y)</i><sup>4</sup></td>
+                            <td>1  4  6  4  1</td>
+
+                        </tr>
+                        <tr>
+                            <td><i>(x+y)</i><sup>5</sup></td>
+                            <td>1  5  10  10  5  1</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p>
+                        The coefficients in these expansions form <b>Pascal's triangle</b>, named after the French mathematician Blaise Pascal (1623–1662). The outer terms in each row are 1; each inner term is the sum of the two terms directly above it.
+                    </p>
+                </div>
+                </div>
+                </div>
+                <div id="2.2" class="third-div">
+                    <p class="section-label">SECTION 2.2</p>
+                    <h2>The binomial theorem</h2>
+                    <p>
+                        The binomial coefficient <sup><i>n</i></sup>C<sub><i>r</i></sub> counts the number of <i>r</i>-element subsets of an <i>n</i>-element set. For example, consider the set <i>X = {a, b, c, d}</i>.
+                    </p>
+                  <table class="supsets">
+                    <thead><tr><th scope="col">Number of elements in subset</th><th scope="col">Number of subsets</th></tr></thead>
+                    <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td><sup>4</sup>C<sub>0</sub></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><sup>4</sup>C<sub>1</sub></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><sup>4</sup>C<sub>2</sub></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><sup>4</sup>C<sub>3</sub></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><sup>4</sup>C<sub>4</sub></td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <div id="theo21" class="theo21">
+                      <p class="section-label">THEOREM 2.1</p>
+                      <h3>The binomial theorem</h3>
+                      <p class="key">(<i>x + y</i>)<sup>n</sup> = ∑<sub>r=0</sub><sup>n</sup> <sup>n</sup>C<sub>r</sub><i>x</i><sup>n-r</sup><i>y</i><sup>r</sup></p>
+                      <p>where <i>n</i> is a positive integer.</p>
+                  </div>   
+                <div class="specialcase" id="specialcase">
+                    <div class="fourth-div">
+                    <h3>Special Case</h3>
+                    <p class="key">(1 + <i>x</i>)<sup>n</sup> = 1 + <sup>n</sup>C<sub>1</sub><i>x</i> + <sup>n</sup>C<sub>2</sub><i>x</i><sup>2</sup> + ··· + <sup>n</sup>C<sub>n-1</sub><i>x</i><sup>n-1</sup> + <i>x</i><sup>n</sup></p>
+               <h4>Note.</h4>
+               <p>For the expansion of (<i>x+y</i>)<sup>n</sup>, where <i>n</i> is a positive integer:</p>
+               <ol class="note">
+                <li>The binomial coefficients are all integers.</li>
+                <li>The coefficients of terms equidistant from the beginning and end of the expansion are equal.</li>
+               </ol>
+               <p>That is</p>
+               <p><sup><i>n</i></sup>C<sub>0</sub> = <sup><i>n</i></sup>C <sub><i>n</i></sub> = 1</p>
+               <p><sup><i>n</i></sup>C<sub>1</sub> = <sup><i>n</i></sup>C <sub><i>n-1</i></sub> = <i>n</i></p>
+               ...
+               <p><sup><i>n</i></sup>C<sub>r</sub> = <sup><i>n</i></sup>C <sub><i>n-r</i></sub></p>
+                </div> 
+                </div>
+                <div id="corollary" class="Corollary">
+                    <h3>Corollary 2.2</h3>  
+                    <p>The number of <i>r</i>-element subsets of an <i>n</i>-element set equals the number of (<i>n-r</i>)-element subsets:
+                    </p>
+                    <p><sup>7</sup>C<sub>5</sub> = <sup>7</sup>C<sub>2</sub></p>
+                    <p><sup>15</sup>C<sub>10</sub> = <sup>15</sup>C<sub>5</sub></p>
+                </div>
+                
+                <div id="general" class="general-r">
+                    <h3>General term</h3>
+                    <p>The general term is used to find out the specific term.</p>
+                    <p>The general term of (<i>x+y</i>)<sup><i>n</i></sup>is</p>
+                    <div>
+                        the (<i>r+1</i>)<sup>th</sup> term = <sup><i>n</i></sup>C<sub><i>r</i></sub><i>x</i><sup><i>n-r</i></sup><i>y</i><sup><i>r</i></sup>
+                    </div>
+                </div>
+                <div id="middleterm" class="middle">
+                    <h3>Middle term in the expansion</h3>
+                    <p>In the expansion of (<i>x+y</i>)<sup><i>n</i></sup>, there are (<i>n</i>+1) terms.</p>
+                    <ul>
+                        <li>If <i>n</i> is even, then (<i>n</i>+1) is odd, so (
+                            <span class="fraction">
+                                <span class="top"><i>n</i>+2</span>
+                                <span class="bottom">2</span>
+                            </span> ) <sup><i>th</i></sup> term will be the only one middle term in the expansion.
+                    </li>
+                        <li>If <i>n</i> is odd, then (<i>n</i>+1) is even, so (<span class="fraction">
+                                <span class="top"><i>n</i>+1</span>
+                                <span class="bottom">2</span>
+                            </span> ) <sup><i>th</i></sup>term and (<span class="fraction">
+                                <span class="top"><i>n</i>+3</span>
+                                <span class="bottom">2</span>
+                            </span>) <sup><i>th</i></sup> term will be the two middle terms in the expansion.
+                         </li>
+                    </ul>
+            </div>
+                </div>
+            <section id="quiz" class="quiz-section" aria-labelledby="quiz-title">
+                <p class="section-label">CHECK YOUR UNDERSTANDING</p>
+                <h2 id="quiz-title">Binomial theorem quiz</h2>
+                <p class="quiz-intro">Answer all six questions, then submit to see your score and review the key ideas.</p>
+                <form id="quiz-form">
+                    <fieldset class="question-block">
+                        <legend>1. What is the coefficient of <i>xy</i> in (<i>x+y</i>)<sup>2</sup>?</legend>
+                        <label><input type="radio" name="q1" value="1"> 1</label>
+                        <label><input type="radio" name="q1" value="2"> 2</label>
+                        <label><input type="radio" name="q1" value="3"> 3</label>
+                    </fieldset>
+                    <fieldset class="question-block">
+                        <legend>2. How many terms are in the expansion of (<i>x+y</i>)<sup>5</sup>?</legend>
+                        <label><input type="radio" name="q2" value="1"> 5</label>
+                        <label><input type="radio" name="q2" value="2"> 7</label>
+                        <label><input type="radio" name="q2" value="3"> 6</label>
+                    </fieldset>
+                    <fieldset class="question-block">
+                        <legend>3. What are the first and last coefficients in every row of Pascal's triangle?</legend>
+                        <label><input type="radio" name="q3" value="1"> 1</label>
+                        <label><input type="radio" name="q3" value="2"> 0</label>
+                        <label><input type="radio" name="q3" value="3"> They depend on the row</label>
+                    </fieldset>
+                    <fieldset class="question-block">
+                        <legend>4. What is <sup>4</sup>C<sub>2</sub>?</legend>
+                        <label><input type="radio" name="q4" value="1"> 4</label>
+                        <label><input type="radio" name="q4" value="2"> 6</label>
+                        <label><input type="radio" name="q4" value="3"> 8</label>
+                    </fieldset>
+                    <fieldset class="question-block">
+                        <legend>5. Which expression gives the (<i>r</i>+1)th term of (<i>x+y</i>)<sup>n</sup>?</legend>
+                        <label><input type="radio" name="q5" value="1"> <sup>n</sup>C<sub>r</sub><i>x</i><sup>r</sup><i>y</i><sup>n-r</sup></label>
+                        <label><input type="radio" name="q5" value="2"> <sup>n</sup>C<sub>r</sub><i>x</i><sup>n</sup><i>y</i><sup>r</sup></label>
+                        <label><input type="radio" name="q5" value="3"> <sup>n</sup>C<sub>r</sub><i>x</i><sup>n-r</sup><i>y</i><sup>r</sup></label>
+                    </fieldset>
+                    <fieldset class="question-block">
+                        <legend>6. If <i>n</i> is odd, how many middle terms does (<i>x+y</i>)<sup>n</sup> have?</legend>
+                        <label><input type="radio" name="q6" value="1"> One</label>
+                        <label><input type="radio" name="q6" value="2"> Two</label>
+                        <label><input type="radio" name="q6" value="3"> None</label>
+                    </fieldset>
+                    <div class="quiz-actions">
+                        <button type="button" id="submit-btn" class="button button-primary">Submit answers</button>
+                        <button type="button" id="restart-btn" class="button button-secondary">Retake quiz</button>
+                    </div>
+                </form>
+                <div id="result" class="result" aria-live="polite"></div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <a class="footer-brand" href="index.html">MATHEMATICS<span>.</span></a>
+        <p>Chapter 2 <span aria-hidden="true">·</span> The Binomial Theorem</p>
+    </footer>
+    <script src="search.js"></script>
+    <script>
+        const answers = [2, 3, 1, 2, 3, 2];
+        const explanations = [
+            "The expansion is x² + 2xy + y², so the coefficient is 2.",
+            "An expansion to power n has n + 1 terms, so this expansion has 6.",
+            "Every row of Pascal's triangle begins and ends with 1.",
+            "The coefficients in the fourth row are 1, 4, 6, 4, 1.",
+            "The general term is C(n, r)x^(n-r)y^r.",
+            "An odd power produces an even number of terms, so there are two middle terms."
+        ];
+        const form = document.getElementById("quiz-form");
+        const resultBox = document.getElementById("result");
+
+        document.getElementById("submit-btn").addEventListener("click", function () {
+            let score = 0;
+            resultBox.textContent = "";
+
+            const scoreLine = document.createElement("p");
+            scoreLine.className = "score-line";
+            resultBox.appendChild(scoreLine);
+
+            answers.forEach(function (answer, index) {
+                const selected = form.querySelector("input[name='q" + (index + 1) + "']:checked");
+                const feedback = document.createElement("p");
+                const correct = selected && Number(selected.value) === answer;
+
+                if (correct) {
+                    score += 1;
+                    feedback.className = "feedback correct";
+                    feedback.textContent = "Question " + (index + 1) + ": Correct.";
+                } else {
+                    feedback.className = selected ? "feedback incorrect" : "feedback warning";
+                    feedback.textContent = "Question " + (index + 1) + ": " +
+                        (selected ? "Not quite. " : "No answer selected. ") + explanations[index];
+                }
+
+                resultBox.appendChild(feedback);
+            });
+
+            const percent = Math.round((score / answers.length) * 100);
+            scoreLine.textContent = "Your score: " + score + "/" + answers.length + " (" + percent + "%)";
+            resultBox.className = "result " +
+                (percent >= 80 ? "success" : percent >= 50 ? "warning" : "incorrect");
+        });
+
+        document.getElementById("restart-btn").addEventListener("click", function () {
+            form.reset();
+            resultBox.textContent = "";
+            resultBox.className = "result";
+        });
+    </script>
+    <script src="scroll-animation.js"></script>
+</body>
+</html>
